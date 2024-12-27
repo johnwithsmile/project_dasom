@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 대시보드 - 다솜 재가복지센터</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-dashboard">
+    <nav class="admin-sidebar">
+        <div class="sidebar-header">
+            <img src="../assets/images/logo.png" alt="다솜 재가복지센터 로고" class="sidebar-logo">
+            <h1>관리자 페이지</h1>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class="fas fa-home"></i>
+                    <span>대시보드</span>
+                </a>
+            </li>
+            <li>
+                <a href="inquiries.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>문의 관리</span>
+                </a>
+            </li>
+            <li>
+                <a href="clients.html">
+                    <i class="fas fa-users"></i>
+                    <span>이용자 관리</span>
+                </a>
+            </li>
+            <li>
+                <a href="caregivers.html">
+                    <i class="fas fa-user-nurse"></i>
+                    <span>요양보호사 관리</span>
+                </a>
+            </li>
+            <li>
+                <a href="schedule.html">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>일정 관리</span>
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <i class="fas fa-images"></i>
+                    <span>갤러리 관리</span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i>
+                    <span>설정</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="admin-main">
+        <header class="admin-header">
+            <div class="header-search">
+                <input type="text" placeholder="검색...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-user">
+                <span class="user-name">관리자</span>
+                <div class="user-menu">
+                    <button id="userMenuBtn">
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">프로필</a>
+                        <a href="settings.html">설정</a>
+                        <a href="login.html">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <div class="dashboard-grid">
+                <!-- 통계 카드 -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>총 이용자</h3>
+                        <p>127명</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>요양보호사</h3>
+                        <p>45명</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>이번 달 방문</h3>
+                        <p>1,234회</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>새로운 문의</h3>
+                        <p>12건</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 최근 문의 -->
+            <section class="dashboard-section">
+                <h2>최근 문의</h2>
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>날짜</th>
+                                <th>이름</th>
+                                <th>문의 유형</th>
+                                <th>내용</th>
+                                <th>상태</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-12-27</td>
+                                <td>김영희</td>
+                                <td>서비스 문의</td>
+                                <td>요양 서비스 비용 문의...</td>
+                                <td><span class="status new">신규</span></td>
+                                <td>
+                                    <button class="btn-action">답변</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-26</td>
+                                <td>이철수</td>
+                                <td>방문 상담</td>
+                                <td>방문 상담 예약 요청...</td>
+                                <td><span class="status pending">처리중</span></td>
+                                <td>
+                                    <button class="btn-action">확인</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 일정 현황 -->
+            <section class="dashboard-section">
+                <h2>오늘의 일정</h2>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="schedule-time">09:00</div>
+                        <div class="schedule-content">
+                            <h4>방문 요양 서비스</h4>
+                            <p>이용자: 박정희 님</p>
+                            <p>요양보호사: 김미영</p>
+                        </div>
+                        <div class="schedule-status">
+                            <span class="status scheduled">예정</span>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">14:00</div>
+                        <div class="schedule-content">
+                            <h4>신규 상담</h4>
+                            <p>내담자: 최영수 님</p>
+                            <p>상담자: 이수진</p>
+                        </div>
+                        <div class="schedule-status">
+                            <span class="status completed">완료</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../assets/js/admin/dashboard.js"></script>
+</body>
+</html>

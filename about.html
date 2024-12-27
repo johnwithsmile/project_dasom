@@ -1,43 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>활동 - 다솜노인복지센터</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>센터 소개 - 다솜 재가복지센터</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
     <header>
-      <h1>다솜노인복지센터</h1>
-      <nav>
-        <a href="index.html">홈</a>
-        <a href="about.html">활동</a>
-        <a href="contact.html">연락처</a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>활동 소개</h2>
-        <p>다솜노인복지센터에서는 아래와 같은 활동을 진행하고 있습니다:</p>
-        <ul>
-          <li>문화 체험 프로그램</li>
-          <li>건강 관리 워크샵</li>
-          <li>지역 사회 봉사 활동</li>
-          <li>취미 및 여가 활동</li>
-        </ul>
-      </section>
-      <section>
-        <h2>활동 갤러리</h2>
-        <p>활동 사진과 함께하는 순간을 아래에서 확인하세요.</p>
-        <div class="gallery">
-          <img src="assets/images/activity1.jpg" alt="활동 사진 1" />
-          <img src="assets/images/activity2.jpg" alt="활동 사진 2" />
-          <img src="assets/images/activity3.jpg" alt="활동 사진 3" />
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="다솜 재가복지센터 로고">
+                <h1>다솜 재가복지센터</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html" class="active">센터 소개</a></li>
+                    <li><a href="services.html">서비스 안내</a></li>
+                    <li><a href="contact.html">연락처</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
         </div>
-      </section>
+    </header>
+
+    <main>
+        <!-- 히어로 섹션 -->
+        <section class="about-hero">
+            <div class="container">
+                <h2>따뜻한 마음으로 함께하는<br>다솜 재가복지센터</h2>
+                <p>어르신의 행복한 노후를 위해 정성을 다하겠습니다</p>
+            </div>
+        </section>
+
+        <!-- 미션과 비전 -->
+        <section class="mission-vision section">
+            <div class="container">
+                <div class="mission">
+                    <h2 class="section-title">미션</h2>
+                    <p>어르신들의 건강하고 행복한 노후 생활을 위한 최상의 요양 서비스 제공</p>
+                </div>
+                <div class="vision">
+                    <h2 class="section-title">비전</h2>
+                    <ul>
+                        <li>전문성 있는 요양 서비스 제공</li>
+                        <li>가족같은 마음으로 정성을 다하는 케어</li>
+                        <li>지역사회와 함께 성장하는 복지센터</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 센터장 인사말 -->
+        <section class="greeting section">
+            <div class="container">
+                <h2 class="section-title">센터장 인사말</h2>
+                <div class="greeting-content">
+                    <div class="greeting-image">
+                        <img src="assets/images/director.jpg" alt="센터장">
+                    </div>
+                    <div class="greeting-text">
+                        <p>안녕하십니까, 다솜 재가복지센터 센터장 ○○○입니다.</p>
+                        <p>우리 센터는 어르신들의 건강하고 행복한 노후를 위해 최선을 다하고 있습니다. 
+                           전문성 있는 요양보호사들과 함께 가족같은 마음으로 어르신들을 모시겠습니다.</p>
+                        <p>어르신들의 삶의 질 향상을 위해 항상 노력하는 다솜 재가복지센터가 되겠습니다.</p>
+                        <p class="greeting-signature">센터장 ○○○ 드림</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연혁 -->
+        <section class="history section">
+            <div class="container">
+                <h2 class="section-title">연혁</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="year">2024</div>
+                        <div class="event">
+                            <h3>다솜 재가복지센터 확장 이전</h3>
+                            <p>노원구 동일로 확장 이전</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2023</div>
+                        <div class="event">
+                            <h3>우수 복지센터 선정</h3>
+                            <p>노원구청 표창장 수상</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2022</div>
+                        <div class="event">
+                            <h3>다솜 재가복지센터 설립</h3>
+                            <p>노원구 첫 개소</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 시설 소개 -->
+        <section class="facility section">
+            <div class="container">
+                <h2 class="section-title">시설 소개</h2>
+                <div class="facility-grid">
+                    <div class="facility-item">
+                        <img src="assets/images/facility1.jpg" alt="상담실">
+                        <h3>상담실</h3>
+                        <p>편안한 분위기에서 상담이 가능한 공간</p>
+                    </div>
+                    <div class="facility-item">
+                        <img src="assets/images/facility2.jpg" alt="프로그램실">
+                        <h3>프로그램실</h3>
+                        <p>다양한 프로그램을 진행하는 공간</p>
+                    </div>
+                    <div class="facility-item">
+                        <img src="assets/images/facility3.jpg" alt="사무실">
+                        <h3>사무실</h3>
+                        <p>체계적인 업무 관리가 이루어지는 공간</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 오시는 길 -->
+        <section class="location section">
+            <div class="container">
+                <h2 class="section-title">오시는 길</h2>
+                <div class="location-content">
+                    <div id="map" class="kakao-map">
+                        <!-- 카카오맵이 들어갈 자리 -->
+                    </div>
+                    <div class="location-info">
+                        <h3>주소</h3>
+                        <p>서울특별시 노원구 동일로 1001번길</p>
+                        <h3>교통편</h3>
+                        <ul>
+                            <li>지하철: 7호선 중계역 3번 출구에서 도보 5분</li>
+                            <li>버스: 1234, 5678번 다솜센터 정류장 하차</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-      <p>&copy; 2024 다솜노인복지센터. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>다솜 재가복지센터</h3>
+                <p>주소: 서울특별시 노원구 동일로 1001번길</p>
+                <p>전화: 02-931-2164</p>
+                <p>이메일: choe2164@naver.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>바로가기</h3>
+                <ul>
+                    <li><a href="about.html">센터 소개</a></li>
+                    <li><a href="services.html">서비스 안내</a></li>
+                    <li><a href="contact.html">연락처</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 다솜 재가복지센터. All rights reserved.</p>
+        </div>
     </footer>
-  </body>
+
+    <!-- 카카오맵 API -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_KAKAO_MAP_API_KEY"></script>
+    <script src="assets/js/map.js"></script>
+</body>
 </html>
