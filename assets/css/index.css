@@ -1,0 +1,17 @@
+.container {
+  padding: 16px;
+}
+
+/* Tablet (≥768px) */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  .nav {
+    flex-direction: row;
+  }
+}
