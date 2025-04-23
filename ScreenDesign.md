@@ -87,28 +87,24 @@
    - 키보드 네비게이션
 
 9. 폴더 구조
-   - project_dasom/
-     ├── README.md
-     ├── ScreenDesign.md # 화면 설계서
-     ├── frontend/
-     │ ├─ public/
-     │ │ ├─ index.html
-     │ │ ├─ contact.html
-     │ │ └─ … (services.html, about.html 등 페이지별 파일)
-     │ │
-     │ └─ assets/
-     │ ├─ css/
-     │ │ └─ styles.css
-     │ ├─ js/
-     │ │ └─ main.js
-     │ └─ images/
-     │ └─ …
-     │
-     └─ backend/ # API 서버
-     ├─ src/
-     │ ├─ server.js
-     │ ├─ routes/
-     │ ├─ controllers/
-     │ └─ models/
-     ├─ .env.example
-     └─ package.json
+   project_dasom/
+   ├── server/
+   │ ├── app.js # Express 서버 설정
+   │ ├── routes/
+   │ │ ├── admin.js # 관리자 페이지 라우트
+   │ │ └── user.js # 사용자 페이지 라우트
+   │ └── package.json
+   └── public/ # 정적 파일
+   ├── css/
+   │ ├── main.css # 기본 스타일
+   │ └── silver.css # 실버 모드 전용
+   ├── js/
+   │ ├── main.js # 공통 기능
+   │ └── admin.js # 관리자 페이지 스크립트
+   ├── images/ # 이미지 리소스
+   └── views/ # HTML 템플릿
+   ├── index.html
+   ├── about.html
+   ├── admin/
+   │ └── dashboard.html
+   └── ... # 기타 페이지

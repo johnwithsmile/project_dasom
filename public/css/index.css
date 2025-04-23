@@ -1,0 +1,44 @@
+/* 실버 모드 버튼 컨테이너 */
+.silver-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #ffffff;
+  border: 3px solid #4f46e5;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 호버 시 효과 */
+.silver-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* 아이콘 스타일 */
+.icon {
+  width: 28px;
+  height: 28px;
+  fill: #4f46e5;
+  transition: fill 0.3s ease;
+}
+
+.silver-btn:hover .icon {
+  fill: #ffffff;
+}
+
+/* 버튼 텍스트 */
+.btn-label {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #4f46e5;
+  text-align: center;
+}
+
+.silver-btn:hover .btn-label {
+  color: #ffffff;
+}

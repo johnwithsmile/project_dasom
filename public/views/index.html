@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다솜 재가복지센터</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- SVG sprite 정의 (인라인) -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="text-resize" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M2 12h4v7h3v-7h4V9H2v3zm18-2h-6v2h6v2h-4v2h4v2h-6v2h6v-8z"
+        />
+      </symbol>
+    </svg>
+
+    <!-- 실버 모드 버튼 -->
+    <button id="silverToggle" class="silver-btn">
+      <svg class="icon" width="28" height="28" aria-hidden="true">
+        <use href="#text-resize" xlink:href="#text-resize"></use>
+      </svg>
+      <div class="btn-label">글자 크기 +</div>
+    </button>
+    <!-- 내비게이션 -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="index.html" class="active">홈 </a>
+        </li>
+        <li>
+          <a href="about.html" class="active">센터 소개 </a>
+        </li>
+        <li>
+          <a href="services.html" class="active">서비스 안내 </a>
+        </li>
+        <li>
+          <a href="contact.html" class="active">연락처 </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+      <div class="carousel">...</div>
+    </section>
+    <!-- 공지사항 섹션 -->
+    <section class="notices section">
+      <div class="container">
+        <h2 class="text-center mb-2">공지사항</h2>
+        <div class="notice-list">
+          <div class="notice-item">
+            <span class="date">2024.01</span>
+            <h3>장기요양등급 신청 안내</h3>
+            <p>장기요양등급 신청 절차와 필요 서류를 안내해드립니다.</p>
+          </div>
+          <div class="notice-item">
+            <span class="date">2024.01</span>
+            <h3>요양보호사 모집</h3>
+            <p>함께할 요양보호사를 모집합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>다솜 재가복지센터</h3>
+          <p>주소: 서울 양천구 목동중앙로13가길 11</p>
+          <p>전화: 02-2648-6218</p>
+          <p>이메일: choe2164@naver.com</p>
+        </div>
+        <div class="footer-links">
+          <h3>바로가기</h3>
+          <ul>
+            <li><a href="about.html">센터 소개</a></li>
+            <li><a href="services.html">서비스 안내</a></li>
+            <li><a href="contact.html">연락처</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 다솜 재가복지센터. All rights reserved.
+          <a href="admin/login.html" class="admin-link">관리자</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+[Header]
+- 로고: #4F46E5 색상 강조 + "Project Dasom" 텍스트 (Bold 24px)
+
+[Body]
+- 이메일 입력 필드:
+  - Placeholder: "example@dasom.com"
+  - 유효성 검사: 실시간 이메일 형식 체크 (에러 시 빨간 테두리)
+  
+- 비밀번호 입력 필드:
+  - 토글 버튼 (표시/숨김)
+  - 8자 이상 강제 안내 툴팁
+
+- 보조 기능:
+  - "비밀번호 찾기" 링크 (우측 정렬)
+  - 소셜 로그인 구분선 (OR 표시)
+
+[Footer]
+- 회원가입 CTA:  
+  "아직 회원이 아니신가요? [회원가입]" (파란색 링크) -->
